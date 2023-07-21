@@ -105,7 +105,7 @@ body {
 
 .container {
   max-width: 1700px;
-  padding: 0 50px;
+  padding: 30px 50px;
   margin: 0 auto;
 }
 
@@ -234,15 +234,15 @@ body {
 }
 
 .hero__container {
-  height: 700px;
-  margin: 0 auto;
+  min-height: 700px;
+  margin: 0 auto ;
   align-items: center;
 }
 
 .hero__content {
   flex-direction: column;
   flex-wrap: wrap;
-  height: 408px;
+  min-height: 408px;
   width: 35%;
   color: var(--white);
 }
@@ -255,7 +255,7 @@ body {
 }
 
 .hero__descr {
-  margin-bottom: auto;
+  margin-bottom: 92px;
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
@@ -292,7 +292,7 @@ body {
 /*ABOUT-US--*/
 
 .about-us {
-  padding: 80px 0 69px;
+  padding: 50px 0 39px;
 }
 
 .section-text {
@@ -303,7 +303,7 @@ body {
 /*GALLERY---*/
 
 .gallery {
-  padding: 80px 0 77px;
+  padding: 50px 0 47px;
   background-image: url(../img/about-us-back-1920-1x.jpg);
 }
 
@@ -327,67 +327,41 @@ body {
 
 .gallery__list {
   flex-direction: column;
-}
-
-.gallery-link {
-  color: var(--white);
+  margin-bottom: 3px;
+  margin-left: 4px;
 }
 
 .gallery__radio {
-  user-select: none;
-  outline: none;
+  padding-left: 20px;
   cursor: pointer;
 }
 
 .gallery-link {
+  position: absolute;
+  -webkit-appearance: none;
   appearance: none;
 }
 
+.gallery__check-decor {
+  position: absolute;
+  width: 0.6em;
+  height: 0.6em;
+  box-shadow: 0 0 0 0.1em;
+  margin-left: -1.4em;
+  margin-top: 0.7em;
+  transition: all .3s ease-in-out;
+}
+
 .gallery__check-text {
-  position: relative;
-  padding-left: 20px;
   font-size: 16px;
-  font-weight: 400;
   line-height: 32px;
   transition: color .2s ease-in-out;
 }
 
-.gallery__check-text::before {
+.gallery__check-decor::after {
   content: "";
   position: absolute;
-  left: -4px;
-  top: 50%;
-  width: 12px;
-  height: 12px;
-  border: 1px solid var(--white);
-  transform: translateY(-50%);
-  transition: border-color .3s ease-in-out;
-}
-
-.gallery__radio:hover .gallery__check-text::before {
-  border-color: var(--Heliotrope);
-}
-
-.gallery__radio:hover .gallery__check-text {
-  color: var(--Heliotrope);
-}
-
-.gallery__radio:active .gallery__check-text {
-  color: var(--Heliotrope);
-}
-
-.gallery__radio:focus-visible .gallery__check-text {
-  color: var(--Heliotrope);
-}
-
-.gallery__radio:focus-visible .gallery__check-text::before {
-  border-color: var(--Heliotrope);
-}
-
-.gallery__check-text::after {
-  content: "";
-  position: absolute;
-  left: 0;
+  left: 3px;
   top: 50%;
   width: 4px;
   height: 4px;
@@ -397,12 +371,23 @@ body {
   transition: opacity .3s ease-in-out;
 }
 
-.gallery-link:checked+.gallery__check-text::after {
-  opacity: 1;
+.gallery-link:focus-visible ~ span {
+   color: var(--Heliotrope);
 }
 
-.gallery-link:checked+.gallery__check-text::before {
-  border-color: var(--Heliotrope);
+.gallery-link:checked + .gallery__check-decor::after {
+  opacity: 1;
+}
+.gallery-link:checked + .gallery__check-decor {
+  color: var(--Heliotrope);
+}
+
+.gallery-link:hover + .gallery__check-decor {
+  color: var(--Heliotrope);
+}
+
+.gallery__radio:active > .gallery__check-text{
+  color: var(--Heliotrope);
 }
 
 .gallery__media {
@@ -412,7 +397,7 @@ body {
 /*CATALOG-----------------------------------------------------------------------*/
 
 .catalog {
-  padding: 80px 0 39px;
+  padding: 50px 0 9px;
 }
 
 .catalog__descr {
@@ -450,7 +435,7 @@ body {
 /*EVENTS-------------------------------------------------------------------------------------------------*/
 
 .events {
-  padding: 39px 0 40px;
+  padding: 9px 0 10px;
 }
 
 .events-list {
@@ -557,7 +542,7 @@ body {
 }
 
 .projects {
-  padding: 43px 0 75px;
+  padding: 13px 0 45px;
 }
 
 .projects__top {
@@ -579,7 +564,7 @@ body {
 /*.contacts-------------------------------------------------------------------*/
 
 .contacts {
-  padding: 36px 0 28px;
+  padding: 6px 0 0;
   border: 1px solid var(--Silver);
 }
 
@@ -727,7 +712,7 @@ body {
 }
 
 .footer__content {
-  padding: 46px 0;
+  padding: 14px 0;
   align-items: center;
   justify-content: space-between;
   width: 100%;
@@ -740,6 +725,9 @@ body {
 
 .footer__link {
   outline: none;
+}
+.footer__link svg path {
+  transition: fill 0.3s ease-in-out;
 }
 
 .footer__link:hover svg path {

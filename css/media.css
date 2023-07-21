@@ -18,7 +18,7 @@
 @media (max-width: 1210px) {
 
   .container {
-    padding: 0 50px;
+    padding: 30px 50px;
   }
 
   .header {
@@ -57,17 +57,17 @@
 
 
   .hero__container {
-    height: 620px;
+    min-height: 620px;
     max-height: 100%;
   }
 
   .hero__content {
-    height: 416px;
+    min-height: 416px;
     width: 80%;
   }
 
   .hero__descr {
-    margin-bottom: auto;
+    margin-bottom: 135px;
   }
 
   .section-text {
@@ -81,7 +81,7 @@
   }
 
   .gallery__steps {
-    margin-bottom: 30px;
+    margin-bottom: 26px;
   }
 
 
@@ -113,7 +113,7 @@
   }
 
   .events {
-    padding-top: 38px;
+    padding-top: 8px;
   }
 
   .events-list {
@@ -162,7 +162,7 @@
   }
 
   .projects {
-    padding-top: 40px;
+    padding-top: 10px;
   }
 
   .projects__top {
@@ -174,8 +174,8 @@
   }
 
   .contacts {
-    padding-top: 43px;
-    padding-bottom: 39px;
+    padding-top: 13px;
+    padding-bottom: 9px;
   }
 
   .contacts__top {
@@ -219,7 +219,7 @@
   }
 
   .footer__content {
-    padding: 40px 0;
+    padding: 10px 0;
   }
 
   .footer__link svg {
@@ -253,20 +253,16 @@
   }
 
   .hero__content {
-    height: 444px;
+    min-height: 444px;
     width: 85%;
   }
 
   .about-us {
-    padding: 80px 0 71px;
+    padding: 50px 0 41px;
   }
 
   .gallery__media {
     gap: 34px;
-  }
-
-  .gallery__steps {
-    margin-bottom: 28px;
   }
 
   .catalog__descr {
@@ -290,7 +286,7 @@
   }
 
   .events {
-    padding-top: 40px;
+    padding-top: 10px;
   }
 
   .events-list {
@@ -327,8 +323,8 @@
   }
 
   .projects {
-    padding-bottom: 77px;
-    padding-top: 38px;
+    padding-top: 7px;
+    padding-bottom: 47px;
   }
 
   .projects__top {
@@ -351,8 +347,8 @@
   }
 
   .contacts {
-    padding-top: 42px;
-    padding-bottom: 37px;
+    padding-top: 12px;
+    padding-bottom: 7px;
   }
 
   .contacts__form {
@@ -424,7 +420,6 @@
 
   .header-nav {
     padding-bottom: 3px;
-    overflow-x: scroll;
   }
 
   .header-nav__list {
@@ -453,13 +448,13 @@
   }
 
   .hero__container {
-    height: 310px;
+    min-height: 310px;
     align-content: center;
   }
 
   .hero__content {
     align-items: center;
-    height: 206px;
+    min-height: 206px;
     width: 100%;
     padding: 0 21px;
   }
@@ -473,7 +468,7 @@
 
   .hero__descr {
     width: 100%;
-    margin-bottom: auto;
+    margin-bottom: 42px;
     text-align: center;
     font-weight: 400;
     font-size: 12px;
@@ -498,8 +493,7 @@
   }
 
   .gallery__steps {
-    padding-top: 0;
-    margin-bottom: 28px;
+    padding-top: 0;;
   }
 
   .gallery__media {
@@ -615,7 +609,7 @@
 
   .contacts {
     border: none;
-    padding-top: 23px;
+    padding-top: 22px;
     padding-bottom: 47px;
   }
 
